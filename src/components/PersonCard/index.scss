@@ -1,0 +1,25 @@
+.card {
+  .personTitle {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: capitalize;
+    img {
+      border: 1px solid beige;
+      margin-right: 1.3rem;
+      border-radius: 50%;
+      display: block;
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #9e9e9e;
+    }
+  }
+}
