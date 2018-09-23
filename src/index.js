@@ -6,7 +6,6 @@ import bootstrap from './hooks/bootstrap'
 import Container from './container'
 
 import './index.css'
-import registerServiceWorker from './registerServiceWorker'
 
 const rootEl = document.getElementById('index')
 const store = configureStore()
@@ -22,4 +21,3 @@ const render = () => {
 }
 
 render()
-registerServiceWorker()
