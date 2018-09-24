@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Loader from '../components/Loader'
 import Card from '../components/Card'
 import Layout from '../components/Layout'
 
-class Home extends Component {
+class Component extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -23,4 +23,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Component
