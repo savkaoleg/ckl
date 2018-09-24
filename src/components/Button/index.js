@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './index.scss'
 
 const Button = ({ text, onClick, raised, primary, warn }) => (
@@ -12,5 +13,13 @@ const Button = ({ text, onClick, raised, primary, warn }) => (
     {text}
   </button>
 )
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+  primary: PropTypes.bool,
+  raised: PropTypes.bool,
+  text: PropTypes.string,
+  warn: PropTypes.bool
+}
 
 export default Button

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import './index.scss'
+import PropTypes from 'prop-types'
 import Person from '../PersonCard'
+import './index.scss'
 import status from '../../status.json'
 
 const getFilteredPersons = (persons, filter) => {
@@ -58,6 +59,11 @@ class Layout extends Component {
       </div>
     )
   }
+}
+
+Layout.propTypes = {
+  changeStatus: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default Layout

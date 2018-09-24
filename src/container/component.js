@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Loader from '../components/Loader'
 import Card from '../components/Card'
 import Layout from '../components/Layout'
@@ -21,6 +22,13 @@ class Component extends React.Component {
       return <Loader text="Loading ..." />
     }
   }
+}
+
+Component.propTypes = {
+  changeStatus: PropTypes.func,
+  data: PropTypes.object,
+  error: PropTypes.string,
+  loaded: PropTypes.boll
 }
 
 export default Component

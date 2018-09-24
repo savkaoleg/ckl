@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Button from '../Button'
 import status from '../../status.json'
 import './index.scss'
@@ -53,6 +54,11 @@ class PersonCard extends Component {
       </div>
     )
   }
+}
+
+PersonCard.propTypes = {
+  changeStatus: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default PersonCard

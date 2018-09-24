@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './index.scss'
 
 const Loader = ({ text }) => (
@@ -19,5 +20,9 @@ const Loader = ({ text }) => (
     <h3 className="loader-title">{text}</h3>
   </div>
 )
+
+Loader.propTypes = {
+  text: PropTypes.string
+}
 
 export default Loader
