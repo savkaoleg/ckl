@@ -2,6 +2,24 @@
 
 live demo: [my herokuapp](https://frozen-river-93186.herokuapp.com/ckl/)
 
+## Install
+
+    $ git clone https://github.com/savkaoleg/ckl.git
+    $ cd ckl
+    $ npm install
+
+## Start dev mode & watch
+
+    $ npm start
+
+## Simple build for production
+
+    $ npm run build
+
+## Run tests
+
+    $ npm test
+
 ## Crew applications
 
 This assignment is meant to evaluate the React proficiency of full-time engineers.
@@ -11,7 +29,7 @@ Your code structure should follow design best practices and our evaluation will 
 
 Create a frontend React app to help with the hiring and onboarding of crew personnel as per the image below:
 
-![Sketch of crew applications app](./docs/app-sketch.jpg "Sketch of crew applications app")
+![Sketch of crew applications app](./docs/app-sketch.jpg 'Sketch of crew applications app')
 
 Prospective crew move through three stages:
 
