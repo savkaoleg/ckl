@@ -63,7 +63,7 @@ class Layout extends Component {
 
 Layout.propTypes = {
   changeStatus: PropTypes.func,
-  data: PropTypes.object
+  data: PropTypes.array
 }
 
 export default Layout

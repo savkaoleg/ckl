@@ -26,9 +26,9 @@ class Component extends React.Component {
 
 Component.propTypes = {
   changeStatus: PropTypes.func,
-  data: PropTypes.object,
+  data: PropTypes.array,
   error: PropTypes.string,
-  loaded: PropTypes.boll
+  loaded: PropTypes.bool
 }
 
 export default Component
