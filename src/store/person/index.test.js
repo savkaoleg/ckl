@@ -3,11 +3,11 @@ import reducer from './index'
 import { addPerson, changePerson } from './actions'
 import statuses from '../../status.json'
 
-const samleUuid = '123'
-const samleUuidTwo = '124'
+const sampleUuid = '123'
+const sampleUuidTwo = '124'
 const initialState = {
   login: {
-    uuid: samleUuid
+    uuid: sampleUuid
   },
   status: statuses.applied
 }
@@ -26,13 +26,13 @@ describe('stote > person > reducer', () => {
   it('changePersonWithWalidUuid', () => {
     const data = {
       login: {
-        uuid: samleUuid
+        uuid: sampleUuid
       },
       status: statuses.applied
     }
     const next = reducer(
       initialState,
-      changePerson(samleUuid, statuses.interviewing)
+      changePerson(sampleUuid, statuses.interviewing)
     )
 
     expect(next).toEqual({ ...data, status: statuses.interviewing })
@@ -41,13 +41,13 @@ describe('stote > person > reducer', () => {
   it('changePersonWithInWalidUuid', () => {
     const data = {
       login: {
-        uuid: samleUuid
+        uuid: sampleUuid
       },
       status: statuses.applied
     }
     const next = reducer(
       initialState,
-      changePerson(samleUuidTwo, statuses.interviewing)
+      changePerson(sampleUuidTwo, statuses.interviewing)
     )
 
     expect(next).toEqual(data)

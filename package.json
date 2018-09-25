@@ -18,11 +18,12 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/src/mock/styleMock.js"
     },
-    "testRegex": ".*.test.js$"
+    "testRegex": "*.test.js$"
   },
   "author": "Oleh Savka",
   "license": "MIT",
   "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.4.2",
@@ -43,13 +44,14 @@
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-jest": "^21.21.0",
     "eslint-plugin-react": "^7.10.0",
-    "jest": "^23.5.0",
     "file-loader": "^2.0.0",
+    "jest": "^23.5.0",
     "node-sass": "^4.9.3",
     "react-hot-loader": "^4.3.4",
     "redux-devtools": "^3.4.1",
     "redux-devtools-extension": "^2.13.5",
     "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.3",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.20.3",
@@ -58,9 +60,10 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "react-dom": "^15.6.2"
+    "redux": "^4.0.0"
   }
 }

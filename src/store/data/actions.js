@@ -1,8 +1,21 @@
+import axios from 'axios'
 import { SET_DATA } from './types'
 import { setError } from '../error/actions'
 import { setLoaded } from '../loaded/actions'
-import { addPerson } from '../person/actions'
 import statuses from '../../status.json'
+
+export const url = 'https://randomuser.me/api/?nat=gb&results=5'
+
+export class Api {
+  constructor(options = {}) {
+    this.client = options.client || axios.create()
+    this.url = options.url || url
+  }
+
+  loadData() {
+    return this.client(this.url).then(({ data }) => data)
+  }
+}
 
 export function setData(payload) {
   return {
@@ -11,25 +24,28 @@ export function setData(payload) {
   }
 }
 
-export function loadData() {
-  return async (dispatch: Function) => {
+export function loadData(apiProvider) {
+  return async dispatch => {
     try {
-      const response = await fetch(
-        'https://randomuser.me/api/?nat=gb&results=5'
-      )
-      const result = await response.json()
+      const api = new Api(apiProvider)
+      const data = await api.loadData() //?
 
-      if (result.results.length) {
-        const personsForRedux = result.results.map(item => {
-          return {
-            status: statuses.applied,
-            ...item
-          }
-        })
-        dispatch(setData(personsForRedux))
+      if (data.results) {
+        if (data.results.length) {
+          const personsForRedux = data.results.map(item => {
+            return {
+              status: statuses.applied,
+              ...item
+            }
+          })
+          dispatch(setData(personsForRedux))
+        } else {
+          dispatch(setError('Something wrong'))
+        }
       } else {
         dispatch(setError('Something wrong'))
       }
+
       dispatch(setLoaded(true))
     } catch (e) {
       console.log('e', e)

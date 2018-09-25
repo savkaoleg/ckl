@@ -11,12 +11,12 @@ const rootEl = document.getElementById('index')
 const store = configureStore()
 bootstrap(store)()
 
-const render = () => {
+export const render = () => {
   ReactDOM.render(
     <Provider store={store}>
       <Container />
     </Provider>,
-    rootEl
+    rootEl || document.createElement('div')
   )
 }
 

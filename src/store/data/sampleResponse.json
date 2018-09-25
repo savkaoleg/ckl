@@ -1,0 +1,184 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "mrs", "first": "christina", "last": "bailey" },
+      "location": {
+        "street": "5144 grove road",
+        "city": "stoke-on-trent",
+        "state": "northumberland",
+        "postcode": "B1 7BJ",
+        "coordinates": { "latitude": "50.2501", "longitude": "36.0567" },
+        "timezone": {
+          "offset": "-11:00",
+          "description": "Midway Island, Samoa"
+        }
+      },
+      "email": "christina.bailey@example.com",
+      "login": {
+        "uuid": "309084db-66a9-43db-b7a1-dd1f5535edd9",
+        "username": "beautifulswan866",
+        "password": "niceguy",
+        "salt": "zNMpZU0C",
+        "md5": "8d0765fa836e798f3986d72d7b8f52f5",
+        "sha1": "a307b7d11277826a00ccce6a0abfb6d728d94059",
+        "sha256": "18f4e50b0e5d99ed593e00cdd75778a472cbd2ecc44f0b8345487a46fb0d25ec"
+      },
+      "dob": { "date": "1951-02-15T01:04:16Z", "age": 67 },
+      "registered": { "date": "2017-09-14T20:35:38Z", "age": 1 },
+      "phone": "0101 298 6494",
+      "cell": "0782-489-800",
+      "id": { "name": "NINO", "value": "KY 39 30 87 G" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/30.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/30.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/30.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "mr", "first": "gerald", "last": "burns" },
+      "location": {
+        "street": "855 main street",
+        "city": "edinburgh",
+        "state": "tayside",
+        "postcode": "IU1P 4PJ",
+        "coordinates": { "latitude": "63.2009", "longitude": "108.5937" },
+        "timezone": {
+          "offset": "-6:00",
+          "description": "Central Time (US & Canada), Mexico City"
+        }
+      },
+      "email": "gerald.burns@example.com",
+      "login": {
+        "uuid": "760475b7-4e97-4be7-8399-03eda7f64fdf",
+        "username": "whiteswan950",
+        "password": "smut",
+        "salt": "KbAWNxOX",
+        "md5": "cc2067cbd5897268ca655fe01c31caf4",
+        "sha1": "f84d1ad61bc1c0fe9bb296a6ce63e997edee80d8",
+        "sha256": "713f36bd1b1b6fa79f19a3c3402f147072de3ed6985b137d131ccc51de34122c"
+      },
+      "dob": { "date": "1987-06-29T00:25:14Z", "age": 31 },
+      "registered": { "date": "2016-03-18T06:06:46Z", "age": 2 },
+      "phone": "023 5157 4687",
+      "cell": "0754-130-528",
+      "id": { "name": "NINO", "value": "JB 90 90 81 A" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/83.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/83.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/83.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "kayla", "last": "fletcher" },
+      "location": {
+        "street": "6489 george street",
+        "city": "worcester",
+        "state": "cleveland",
+        "postcode": "KJ3S 2DB",
+        "coordinates": { "latitude": "6.0209", "longitude": "58.1068" },
+        "timezone": {
+          "offset": "+2:00",
+          "description": "Kaliningrad, South Africa"
+        }
+      },
+      "email": "kayla.fletcher@example.com",
+      "login": {
+        "uuid": "81c81a6e-ed90-4ad8-ace6-624c8dd02e87",
+        "username": "lazymeercat730",
+        "password": "shaman",
+        "salt": "vp8rOfxe",
+        "md5": "62ebf0862cabf3ad5b6b26caf1b26f7f",
+        "sha1": "d341b9e14156707514e0c20510d9bbcb285cf154",
+        "sha256": "cf9d6bada603e6ebe6eab3f81cab55fac075317b90bd677f4ee79771135faf95"
+      },
+      "dob": { "date": "1957-04-18T21:16:32Z", "age": 61 },
+      "registered": { "date": "2014-01-01T20:36:23Z", "age": 4 },
+      "phone": "01435 814717",
+      "cell": "0740-368-424",
+      "id": { "name": "NINO", "value": "MY 84 04 55 S" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/54.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/54.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/54.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "rose", "last": "wells" },
+      "location": {
+        "street": "3803 oaks cross",
+        "city": "cambridge",
+        "state": "northumberland",
+        "postcode": "J7U 6QU",
+        "coordinates": { "latitude": "78.9613", "longitude": "54.1708" },
+        "timezone": { "offset": "-12:00", "description": "Eniwetok, Kwajalein" }
+      },
+      "email": "rose.wells@example.com",
+      "login": {
+        "uuid": "ed9c122e-3689-4e7c-a849-fd01ed547c4f",
+        "username": "angrybird645",
+        "password": "grace",
+        "salt": "9eobWIe7",
+        "md5": "122a82117729c42b65350e2041b67d38",
+        "sha1": "c4dba8f1e7296800f68223ec454d7f18db7b5af9",
+        "sha256": "fd812eb360928cd63782afd1570f20a14e2dcb33da593125a55e7b0082b1f3e3"
+      },
+      "dob": { "date": "1973-09-23T02:14:07Z", "age": 45 },
+      "registered": { "date": "2004-12-01T07:24:23Z", "age": 13 },
+      "phone": "016977 3099",
+      "cell": "0722-687-643",
+      "id": { "name": "NINO", "value": "MP 94 17 82 Y" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/4.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/4.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/4.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "mr", "first": "jamie", "last": "hamilton" },
+      "location": {
+        "street": "5619 the grove",
+        "city": "stirling",
+        "state": "greater manchester",
+        "postcode": "K1 4PQ",
+        "coordinates": { "latitude": "-10.6454", "longitude": "-142.3993" },
+        "timezone": { "offset": "-3:30", "description": "Newfoundland" }
+      },
+      "email": "jamie.hamilton@example.com",
+      "login": {
+        "uuid": "92d37dfd-1101-4c15-a17f-02ed84ab29bc",
+        "username": "lazycat795",
+        "password": "lick",
+        "salt": "cxNenmpt",
+        "md5": "49dd74eb6aa351dc38770cdadb13661d",
+        "sha1": "149cba5c3a8ed607941c8e0ef094b46000c361db",
+        "sha256": "ea692b41986c970b85cb0416cac795ea5f704b92e2e4098d39708dfc93c0540b"
+      },
+      "dob": { "date": "1957-07-16T02:43:33Z", "age": 61 },
+      "registered": { "date": "2004-11-13T06:07:04Z", "age": 13 },
+      "phone": "016977 55974",
+      "cell": "0760-013-340",
+      "id": { "name": "NINO", "value": "RL 43 70 48 B" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/61.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/61.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/61.jpg"
+      },
+      "nat": "GB"
+    }
+  ],
+  "info": {
+    "seed": "3bca2bc7d9d7409b",
+    "results": 5,
+    "page": 1,
+    "version": "1.2"
+  }
+}
