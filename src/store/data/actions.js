@@ -2,6 +2,7 @@ import { SET_DATA } from './types'
 import { setError } from '../error/actions'
 import { setLoaded } from '../loaded/actions'
 import { addPerson } from '../person/actions'
+import statuses from '../../status.json'
 
 export function setData(payload) {
   return {
@@ -19,7 +20,13 @@ export function loadData() {
       const result = await response.json()
 
       if (result.results.length) {
-        result.results.map(item => dispatch(addPerson(item)))
+        const personsForRedux = result.results.map(item => {
+          return {
+            status: statuses.applied,
+            ...item
+          }
+        })
+        dispatch(setData(personsForRedux))
       } else {
         dispatch(setError('Something wrong'))
       }
