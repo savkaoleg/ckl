@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Renders correctly 1`] = `
+<button
+  className="md-btn md-btn-ripple   "
+  type="button"
+/>
+`;

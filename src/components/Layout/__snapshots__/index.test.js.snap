@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Renders correctly without props 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="column"
+  >
+    <h2>
+      applied
+    </h2>
+    <div />
+  </div>
+  <div
+    className="column"
+  >
+    <h2>
+      interviewing
+    </h2>
+    <div />
+  </div>
+  <div
+    className="column"
+  >
+    <h2>
+      hired
+    </h2>
+    <div />
+  </div>
+</div>
+`;

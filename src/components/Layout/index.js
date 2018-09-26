@@ -4,8 +4,14 @@ import Person from '../PersonCard'
 import './index.scss'
 import status from '../../status.json'
 
-const getFilteredPersons = (persons, filter) => {
-  return persons.filter(p => p.status === filter)
+export const getFilteredPersons = (persons = [], filter = '') => {
+  console.log(persons)
+  console.log(filter)
+  if (persons.length) {
+    return persons.filter(p => p.status === filter)
+  } else {
+    return []
+  }
 }
 
 class Layout extends Component {
@@ -15,6 +21,7 @@ class Layout extends Component {
 
   render() {
     const { data } = this.props
+    console.log(data)
     const applied = getFilteredPersons(data, status.applied)
     const interviewing = getFilteredPersons(data, status.interviewing)
     const hired = getFilteredPersons(data, status.hired)
