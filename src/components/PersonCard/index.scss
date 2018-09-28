@@ -1,3 +1,5 @@
+$gray-color: #9e9e9e;
+
 .card {
   .personTitle {
     display: flex;
@@ -19,7 +21,28 @@
       overflow: hidden;
       text-align: center;
       vertical-align: middle;
-      background-color: #9e9e9e;
+      background-color: $gray-color;
     }
+  }
+}
+
+.skeleton {
+  background: $gray-color;
+  color: $gray-color;
+  animation-name: skeletonAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes skeletonAnimation {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.8;
   }
 }

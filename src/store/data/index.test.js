@@ -70,7 +70,6 @@ describe('stote > data > reducer', () => {
     await store.dispatch(loadData())
 
     const actions = store.getActions() //?
-    console.log(actions[1])
     expect(actions[1]).toEqual({ type: 'LOADED_CHANGE', loadedVal: true })
     expect(actions[0]).toHaveProperty('type', 'SET_DATA')
   })

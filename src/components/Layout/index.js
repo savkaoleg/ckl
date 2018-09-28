@@ -5,8 +5,6 @@ import './index.scss'
 import status from '../../status.json'
 
 export const getFilteredPersons = (persons = [], filter = '') => {
-  console.log(persons)
-  console.log(filter)
   if (persons.length) {
     return persons.filter(p => p.status === filter)
   } else {
@@ -21,13 +19,12 @@ class Layout extends Component {
 
   render() {
     const { data } = this.props
-    console.log(data)
     const applied = getFilteredPersons(data, status.applied)
     const interviewing = getFilteredPersons(data, status.interviewing)
     const hired = getFilteredPersons(data, status.hired)
     return (
       <div className="row">
-        <div className="column">
+        <div className={`column ${status.applied}`}>
           <h2>{status.applied}</h2>
           <div>
             {applied.map(person => (
@@ -39,7 +36,7 @@ class Layout extends Component {
             ))}
           </div>
         </div>
-        <div className="column">
+        <div className={`column ${status.interviewing}`}>
           <h2>{status.interviewing}</h2>
           <div>
             {interviewing.map(person => (
@@ -51,7 +48,7 @@ class Layout extends Component {
             ))}
           </div>
         </div>
-        <div className="column">
+        <div className={`column ${status.hired}`}>
           <h2>{status.hired}</h2>
           <div>
             {hired.map(person => (

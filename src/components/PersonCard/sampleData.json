@@ -1,0 +1,37 @@
+{
+  "status": "applied",
+  "gender": "female",
+  "name": { "title": "mrs", "first": "christina", "last": "bailey" },
+  "location": {
+    "street": "5144 grove road",
+    "city": "stoke-on-trent",
+    "state": "northumberland",
+    "postcode": "B1 7BJ",
+    "coordinates": { "latitude": "50.2501", "longitude": "36.0567" },
+    "timezone": {
+      "offset": "-11:00",
+      "description": "Midway Island, Samoa"
+    }
+  },
+  "email": "christina.bailey@example.com",
+  "login": {
+    "uuid": "309084db-66a9-43db-b7a1-dd1f5535edd9",
+    "username": "beautifulswan866",
+    "password": "niceguy",
+    "salt": "zNMpZU0C",
+    "md5": "8d0765fa836e798f3986d72d7b8f52f5",
+    "sha1": "a307b7d11277826a00ccce6a0abfb6d728d94059",
+    "sha256": "18f4e50b0e5d99ed593e00cdd75778a472cbd2ecc44f0b8345487a46fb0d25ec"
+  },
+  "dob": { "date": "1951-02-15T01:04:16Z", "age": 67 },
+  "registered": { "date": "2017-09-14T20:35:38Z", "age": 1 },
+  "phone": "0101 298 6494",
+  "cell": "0782-489-800",
+  "id": { "name": "NINO", "value": "KY 39 30 87 G" },
+  "picture": {
+    "large": "https://randomuser.me/api/portraits/women/30.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/30.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/30.jpg"
+  },
+  "nat": "GB"
+}

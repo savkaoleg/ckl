@@ -31,28 +31,45 @@ class PersonCard extends Component {
     this.props.changeStatus(this.props.data.login.uuid, nextStatus)
   }
 
-  render() {
-    const { data } = this.props
-    const { title, first, last } = data.name
-    const name = `${title} ${first} ${last}`
+  skeletonName = <span className="skeleton">________________</span>
+
+  renderCard(name = this.skeletonName, picture = '', personStatus = '') {
     return (
       <div className="card">
         <div className="personTitle">
-          <img src={data.picture.thumbnail} />
+          {(() => {
+            if (picture) {
+              return <img src={picture} />
+            } else {
+              return <img className="skeleton" />
+            }
+          })()}
           {name}
         </div>
         {(() => {
-          if (data.status !== status.applied) {
+          if (personStatus !== status.applied) {
             return <Button text="<<" onClick={this.moveLeft} raised primary />
           }
         })()}
         {(() => {
-          if (data.status !== status.hired) {
+          if (personStatus !== status.hired) {
             return <Button text=">>" onClick={this.moveRigt} raised primary />
           }
         })()}
       </div>
     )
+  }
+
+  render() {
+    const { data } = this.props
+    if (data && data.name) {
+      const { title, first, last } = data.name
+      const name = `${title} ${first} ${last}`
+
+      return this.renderCard(name, data.picture.thumbnail, data.status)
+    } else {
+      return this.renderCard()
+    }
   }
 }
 

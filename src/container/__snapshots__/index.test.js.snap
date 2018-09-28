@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Renders correctly 1`] = `
+<El
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(Component)>
+      <Component
+        changeStatus={[Function]}
+        data={Array []}
+        error=""
+        loaded={false}
+      >
+        <Loader
+          text="Loading ..."
+        >
+          <div
+            className="showbox"
+          >
+            <div
+              className="loader"
+            >
+              <svg
+                className="circular"
+                viewBox="25 25 50 50"
+              >
+                <circle
+                  className="path"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  r="20"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
+            <h3
+              className="loader-title"
+            >
+              Loading ...
+            </h3>
+          </div>
+        </Loader>
+      </Component>
+    </Connect(Component)>
+  </Provider>
+</El>
+`;
