@@ -1,10 +1,20 @@
+// @flow
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Person from '../PersonCard'
 import './index.scss'
-import status from '../../status.json'
+import status from '../../statuses'
 
-export const getFilteredPersons = (persons = [], filter = '') => {
+type PersonType = {
+  status: string,
+  login: {
+    uuid: number
+  }
+}
+
+export const getFilteredPersons = (
+  persons: Array<PersonType> = [],
+  filter: string = ''
+) => {
   if (persons.length) {
     return persons.filter(p => p.status === filter)
   } else {
@@ -12,8 +22,13 @@ export const getFilteredPersons = (persons = [], filter = '') => {
   }
 }
 
-class Layout extends Component {
-  constructor(props) {
+type Props = {
+  changeStatus: Function,
+  data: Array<any>
+}
+
+class Layout extends Component<Props> {
+  constructor(props: Object) {
     super(props)
   }
 
@@ -63,11 +78,6 @@ class Layout extends Component {
       </div>
     )
   }
-}
-
-Layout.propTypes = {
-  changeStatus: PropTypes.func,
-  data: PropTypes.array
 }
 
 export default Layout
