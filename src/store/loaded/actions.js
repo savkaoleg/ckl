@@ -1,3 +1,4 @@
+// @flow
 import { LOADED_CHANGE } from './types'
 
 export function setLoaded(loadedVal: boolean) {

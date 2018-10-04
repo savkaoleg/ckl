@@ -1,3 +1,4 @@
+// @flow
 import axios from 'axios'
 import { SET_DATA } from './types'
 import { setError } from '../error/actions'
@@ -28,7 +29,7 @@ export function loadData(apiProvider) {
   return async dispatch => {
     try {
       const api = new Api(apiProvider)
-      const data = await api.loadData() //?
+      const data = await api.loadData()
 
       if (data.results) {
         if (data.results.length) {

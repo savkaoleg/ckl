@@ -1,22 +1,15 @@
 // @flow
 import React, { Component } from 'react'
-import Person from '../PersonCard'
+import PersonCard from '../PersonCard'
 import './index.scss'
 import status from '../../statuses'
-
-type PersonType = {
-  status: string,
-  login: {
-    uuid: number
-  }
-}
 
 export const getFilteredPersons = (
   persons: Array<PersonType> = [],
   filter: string = ''
 ) => {
   if (persons.length) {
-    return persons.filter(p => p.status === filter)
+    return (persons.filter(p => p.status === filter): Array<PersonType>)
   } else {
     return []
   }
@@ -43,7 +36,7 @@ class Layout extends Component<Props> {
           <h2>{status.applied}</h2>
           <div>
             {applied.map(person => (
-              <Person
+              <PersonCard
                 key={person.login.uuid}
                 data={person}
                 changeStatus={this.props.changeStatus}
@@ -55,7 +48,7 @@ class Layout extends Component<Props> {
           <h2>{status.interviewing}</h2>
           <div>
             {interviewing.map(person => (
-              <Person
+              <PersonCard
                 key={person.login.uuid}
                 data={person}
                 changeStatus={this.props.changeStatus}
@@ -67,7 +60,7 @@ class Layout extends Component<Props> {
           <h2>{status.hired}</h2>
           <div>
             {hired.map(person => (
-              <Person
+              <PersonCard
                 key={person.login.uuid}
                 data={person}
                 changeStatus={this.props.changeStatus}

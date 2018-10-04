@@ -1,8 +1,10 @@
+// @flow
+
 import { connect } from 'react-redux'
 import Component from './component'
 import { changePerson } from '../store/person/actions'
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: Object) => {
   return {
     error: state.error,
     data: state.data,

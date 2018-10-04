@@ -1,7 +1,8 @@
+// @flow
 import { ADD_PERSON, CHANGE_PERSON } from './types'
 import statuses from '../../status.json'
 
-export default function person(state = {}, action) {
+export default function person(state: Object = {}, action: Object) {
   const { type, status, data, uuid } = action
   switch (type) {
     case ADD_PERSON:

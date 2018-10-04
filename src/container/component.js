@@ -1,11 +1,19 @@
+// @flow
+
 import React from 'react'
-import PropTypes from 'prop-types'
 import Loader from '../components/Loader'
 import Card from '../components/Card'
 import Layout from '../components/Layout'
 
-class Component extends React.Component {
-  constructor(props) {
+type Props = {
+  changeStatus: Function,
+  data: Array<any>,
+  error: string,
+  loaded: boolean
+}
+
+class Component extends React.Component<Props> {
+  constructor(props: Object) {
     super(props)
   }
 
@@ -23,12 +31,4 @@ class Component extends React.Component {
     }
   }
 }
-
-Component.propTypes = {
-  changeStatus: PropTypes.func,
-  data: PropTypes.array,
-  error: PropTypes.string,
-  loaded: PropTypes.bool
-}
-
 export default Component

@@ -11,9 +11,9 @@ const Button = ({
 }: {
   text: string,
   onClick: Function,
-  raised: boolean,
-  primary: boolean,
-  warn: boolean
+  raised?: boolean,
+  primary?: boolean,
+  warn?: boolean
 }) => (
   <button
     type="button"

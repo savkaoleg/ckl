@@ -1,8 +1,9 @@
+// @flow
 import { SET_DATA } from './types'
 import { ADD_PERSON, CHANGE_PERSON } from '../person/types'
 import person from '../person/index'
 
-export default function data(state = [], action) {
+export default function data(state: Array<PersonType> = [], action) {
   const { type, payload } = action
   switch (type) {
     case ADD_PERSON:

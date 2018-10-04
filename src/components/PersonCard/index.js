@@ -1,39 +1,48 @@
+// @flow
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Button from '../Button'
-import status from '../../status.json'
+import statuses from '../../statuses'
 import './index.scss'
 
-class PersonCard extends Component {
-  constructor(props) {
+type Props = {
+  changeStatus: Function,
+  data: PersonType
+}
+
+class PersonCard extends Component<Props> {
+  constructor(props: Object) {
     super(props)
   }
 
   moveLeft = () => {
-    let nextStatus
-    if (status.hired === this.props.data.status) {
-      nextStatus = status.interviewing
+    let nextStatus: string
+    if (statuses.hired === this.props.data.status) {
+      nextStatus = statuses.interviewing
     }
-    if (status.interviewing === this.props.data.status) {
-      nextStatus = status.applied
+    if (statuses.interviewing === this.props.data.status) {
+      nextStatus = statuses.applied
     }
     this.props.changeStatus(this.props.data.login.uuid, nextStatus)
   }
 
   moveRigt = () => {
-    let nextStatus
-    if (status.applied === this.props.data.status) {
-      nextStatus = status.interviewing
+    let nextStatus: string
+    if (statuses.applied === this.props.data.status) {
+      nextStatus = statuses.interviewing
     }
-    if (status.interviewing === this.props.data.status) {
-      nextStatus = status.hired
+    if (statuses.interviewing === this.props.data.status) {
+      nextStatus = statuses.hired
     }
     this.props.changeStatus(this.props.data.login.uuid, nextStatus)
   }
 
   skeletonName = <span className="skeleton">________________</span>
 
-  renderCard(name = this.skeletonName, picture = '', personStatus = '') {
+  renderCard(
+    name: mixed = this.skeletonName,
+    picture: string = '',
+    personStatus: string = ''
+  ) {
     return (
       <div className="card">
         <div className="personTitle">
@@ -47,12 +56,12 @@ class PersonCard extends Component {
           {name}
         </div>
         {(() => {
-          if (personStatus !== status.applied) {
+          if (personStatus !== statuses.applied) {
             return <Button text="<<" onClick={this.moveLeft} raised primary />
           }
         })()}
         {(() => {
-          if (personStatus !== status.hired) {
+          if (personStatus !== statuses.hired) {
             return <Button text=">>" onClick={this.moveRigt} raised primary />
           }
         })()}
@@ -71,11 +80,6 @@ class PersonCard extends Component {
       return this.renderCard()
     }
   }
-}
-
-PersonCard.propTypes = {
-  changeStatus: PropTypes.func,
-  data: PropTypes.object
 }
 
 export default PersonCard

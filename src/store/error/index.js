@@ -1,3 +1,4 @@
+// @flow
 import { ERROR_CHANGE } from './types'
 
 export default function error(state = '', action) {

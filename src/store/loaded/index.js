@@ -1,3 +1,4 @@
+// @flow
 import { LOADED_CHANGE } from './types'
 
 export default function loaded(state = false, action) {
